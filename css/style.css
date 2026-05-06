@@ -197,18 +197,34 @@ td, th {
         padding: 20px 15px;
         margin: 10px auto;
     }
+    
     h1 {
-        font-size: 32px;
+        font-size: 28px; 
+        line-height: 1.2;
     }
+
     p, li {
         font-size: 16px;
     }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;    
+        margin: 8px 0;    
+        padding: 8px;
+        font-size: 16px;   
+        border-bottom: 1px solid #333; 
+    }
+
+    .nav-active {
+        border-bottom: 2px solid #00b7ff;
+    }
+
     .main-img, .engine-img {
         max-width: 100%;
     }
-    nav a {
-        padding: 10px 5px;
-        font-size: 14px;
-        margin: 0 5px;
-    }
 }
+
