@@ -1,0 +1,99 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #cc0000;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #ff3333;
+    font-size: 28px;
+    border-left: 5px solid #cc0000;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+li {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    list-style-type: square;
+}
+
+nav {
+    background-color: #252525;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-home {
+    color: white;
+}
+
+.nav-home:hover {
+    color: #cc0000;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.nav-active {
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
+}
+
+.accent-link {
+    color: #ff3333;
+    transition: color 0.2s ease;
+}
+
+.accent-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 15px;
+    border: 1px solid #444;
+}
