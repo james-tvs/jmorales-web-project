@@ -30,11 +30,10 @@ p {
 }
 
 .container {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 20px 40px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 40px 20px;
+    background-color: transparent;
 }
 
 ul {
@@ -97,3 +96,102 @@ td, th {
     padding: 15px;
     border: 1px solid #444;
 }
+
+.image-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;    
+    background: none;   
+}
+
+.caption {
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main-img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    
+    
+    box-shadow: 0 5px 20px rgba(0, 183, 255, 0.3);
+    border: 1px solid rgba(0, 183, 255, 0.2);
+    
+    
+    transition: all 0.4s ease-in-out !important;
+    cursor: pointer; 
+}
+
+.main-img:hover {
+    transform: translateY(-5px) scale(1.02) !important;
+    box-shadow: 0 20px 60px rgba(0, 183, 255, 0.8) !important;
+    border: 1px solid rgba(0, 183, 255, 0.6) !important;
+}
+
+.engine-img {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.engine-img:hover {
+    filter: brightness(1.1) contrast(1.1);
+    
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 
+                0 0 50px rgba(0, 183, 255, 0.5);
+    
+    border: 1px solid rgba(0, 183, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.glow-button {
+    background-color: #00b7ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    background-color: #008cc2;
+    box-shadow: 0 0 20px rgba(0, 183, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.hidden-banner {
+    display: none;
+}
+
+.visible-banner {
+    display: block;
+    background: linear-gradient(90deg, #00b7ff, #0056b3);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 4px solid #fff;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+

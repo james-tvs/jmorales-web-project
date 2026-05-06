@@ -1,74 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Foxbody Mustang - Project 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxbody Mustang - Project 4 (JS)</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <div id="welcomeBanner" class="hidden-banner" role="alert" aria-live="assertive"></div>
 
-    <nav>
-    <a href="../Index.html" class="nav-home">Home</a>
-    <a href="P4.html" class="nav-active">Project 4 (Foxbody)</a>
+    <nav aria-label="Main Navigation">
+        <a href="../Index.html" class="nav-home">Home</a>
+        <a href="P4.html" class="nav-active" aria-current="page">Project 4 (JS)</a>
+        <a href="../html/project3.html" class="nav-home">Project 3 (CSS)</a>
+        <a href="../html/project2.html" class="nav-home">Project 2 (HTML)</a>
     </nav>
 
-
-    <div class="container">
-
+    <main class="container">
         <h1>The Foxbody Mustang (1979-1993)</h1>
 
         <p>
-            The <strong>Foxbody Mustang</strong> is widely considered the car that saved the Mustang brand. Built on the versatile Fox platform, it provided a lightweight chassis that was perfect for everything from daily driving to professional drag racing.
+            The <strong>Foxbody Mustang</strong> is widely considered the car that saved the Mustang brand. Built on the versatile Fox platform, it provided a lightweight chassis perfect for daily driving and performance racing.
         </p>
 
-        <p>
-            The most famous variant is the 5.0L V8, which became a cultural icon in the 1980s and early 90s. Its boxy aesthetic and high performance to cost ratio made it a legend among automotive enthusiasts.
-        </p>
+        <section class="image-wrapper">
+            <img src="../Images/BluFox.jpg" 
+                 alt="A bright light blue lightly modified Foxbody Mustang parked outdoors" 
+                 class="main-img">
+            <p class="caption">Featured Build: Two tone GT Hatchback</p>
+        </section>
 
-        <div class="image-wrapper">
-            <img src="../Images/BluFox.jpg" alt="Blue Foxbody Mustang" class="main-img">
-            <p class="caption">Project Car: BluFox</p>
-        </div>
-
-
-        <h2>Why Collectors (and me) Love the Foxbody</h2>
+        <h2>Why Collectors Love the Foxbody</h2>
         <ul>
-            <li><strong>The 5.0 Motor:</strong> Famous for its reliability and thump.</li>
-            <li><strong>Light Weight:</strong> The notchback models are incredibly light for a V8 car.</li>
-            <li><strong>Aftermarket Support:</strong> You can build an entire car from a catalog.</li>
-            <li><strong>Variety:</strong> Available in Hatchback, Notchback, and Convertible.</li>
+            <li><strong>The 5.0 Motor:</strong> Famous for its reliability and iconic exhaust note.</li>
+            <li><strong>Light Weight:</strong> The notchback models are incredibly light for a V8 chassis.</li>
+            <li><strong>Aftermarket Support:</strong> Ability to build a custom car entirely from performance catalogs.</li>
         </ul>
+
+        <section class="image-wrapper">
+            <img src="../Images/50c.jpg" 
+                 alt="Close up view of a 5.0 Liter Ford V8 Cobra engine with GT40 heads and intake" 
+                 class="engine-img">
+            <p class="caption">The legendary 5.0L V8 with GT40 top end</p> 
+        </section>
 
         <h2>Engine Performance Evolution</h2>
         <table>
-            <tr>
-                <th>Year Range</th>
-                <th>Engine</th>
-                <th>Horsepower</th>
-            </tr>
-            <tr>
-                <td>1979 - 1981</td>
-                <td>5.0L V8 (Carbureted)</td>
-                <td>140 hp</td>
-            </tr>
-            <tr class="row-alt">
-                <td>1987 - 1992</td>
-                <td>5.0L High Output (Fuel Injected)</td>
-                <td>225 hp</td>
-            </tr>
-            <tr>
-                <td>1993</td>
-                <td>5.0L SVT Cobra</td>
-                <td>235 hp</td>
-            </tr>
+            <caption>Summary of 5.0L Horsepower ratings by year range</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Year Range</th>
+                    <th scope="col">Engine</th>
+                    <th scope="col">Horsepower</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1979 - 1981</td>
+                    <td>5.0L V8 (Carbureted)</td>
+                    <td>140 hp</td>
+                </tr>
+                <tr class="row-alt">
+                    <td>1987 - 1992</td>
+                    <td>5.0L High Output (Fuel Injected)</td>
+                    <td>225 hp</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>5.0L SVT Cobra</td>
+                    <td>235 hp</td>
+                </tr>
+            </tbody>
         </table>
 
         <p class="footer-link">
-            Learn more about Ford history on the 
+            Explore the heritage on the 
             <a href="https://ford.com" target="_blank" class="accent-link">
-                Official Ford Mustang Page
+                Official Ford Mustang History and Performance Page
             </a>
         </p>
+    </main>
 
-    </div>
+    <section class="form-container" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #333;">
+        <h2 style="color: #00b7ff;">Join the Mustang Registry</h2>
+        <form id="mustangForm">
+            <div style="margin-bottom: 15px;">
+                <label for="userName">Driver Name:</label><br>
+                <input type="text" id="userName" name="userName" required style="width: 100%; padding: 10px; margin-top: 5px; background: #333; color: white; border: 1px solid #555;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="favModel">Mustang(s) Year/Model:</label><br>
+                <input type="text" id="favModel" name="favModel" required style="width: 100%; padding: 10px; margin-top: 5px; background: #333; color: white; border: 1px solid #555;">
+            </div>
+            <button type="submit" id="submitBtn" class="glow-button">Submit Registry</button>
+        </form>
+        <div id="greetingMessage" aria-live="polite"></div>
+    </section>
+
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
