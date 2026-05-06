@@ -1,3 +1,12 @@
+.center-content {
+    text-align: center;
+}
+
+.project-page ul {
+    text-align: left;
+    display: inline-block;
+}
+
 body {
     background-color: #121212;
     color: #ffffff;
