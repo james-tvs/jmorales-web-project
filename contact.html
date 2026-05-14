@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | GreenTech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">GreenTech</a>
+        <button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Connect With Our Team</h1>
+        <p class="subtitle">Ready to optimize your company infrastructure? Drop us a line below.</p>
+
+        <div class="contact-wrapper">
+            <section class="contact-info">
+                <h2>Corporate Headquarters</h2>
+                <p><strong>Address:</strong> 100 Eco Innovation Way, Suite 400, Austin, TX 78701</p>
+                <p><strong>Email:</strong> connect@greentechsolutions.com</p>
+                <p><strong>Phone:</strong> (512) 555-0194</p>
+            </section>
+
+            <section class="form-container">
+                <h2>Inquiry Form</h2>
+                <div id="form-feedback" class="feedback-message" aria-live="polite"></div>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="user-name">Full Name *</label>
+                        <input type="text" id="user-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Business Email Address *</label>
+                        <input type="email" id="user-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-msg">Message *</label>
+                        <textarea id="user-msg" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GreenTech Solutions. All rights reserved. | Fulfilling WCAG Accessibility Standards.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
